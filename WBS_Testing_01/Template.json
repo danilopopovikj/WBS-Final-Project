@@ -1,0 +1,15 @@
+{
+	"@context": {
+	"name": "https://schema.org/#name",
+    "ingredient": "https://schema.org/#ingredients",
+    "recipeInstructions": "https://schema.org/#recipeInstructions",
+    "description": "https://schema.org/#description",
+	"type":"http://www.w3.org/1999/02/22-rdf-syntax-ns#/type",
+	"recipeIngredient":"https://schema.org/#recipeIngredient"
+	},
+	"type": "Recipe",
+	"description": "{{Description}}",
+	"recipeIngredient": [{{Ingredients}}],
+	"name": "{{Name}}",
+    "recipeInstructions": [{{Instructions}}]
+}
