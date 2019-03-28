@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#/type> "Recipe"^^xsd:string;
+     <https://schema.org/#datePublished> "2009-05-08"^^xsd:string;
+     <https://schema.org/#description> "This classic banana bread recipe comes from my mom -- the walnuts add a nice texture and flavor to the banana bread."^^xsd:string;
+     <https://schema.org/#name> "Mom's World Famous Banana Bread"^^xsd:string;
+     <https://schema.org/#recipeIngredient> "1 egg"^^xsd:string,
+                                            "3 or 4 ripe bananas, smashed"^^xsd:string,
+                                            "3/4 cup of sugar"^^xsd:string;
+     <https://schema.org/#recipeInstructions> "Cook, Bake, Kys"^^xsd:string.
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#/type> "Recipe"^^xsd:string;
+     <https://schema.org/#datePublished> "2009-05-01"^^xsd:string;
+     <https://schema.org/#description> "Thtestttttttttttttttis classic banana bread recipe comes from my mom -- the walnuts add a nice texture and flavor to the banana bread."^^xsd:string;
+     <https://schema.org/#name> "Moesttttttttm's World Famous Banana Bread"^^xsd:string;
+     <https://schema.org/#recipeIngredient> "1estttttttt egg"^^xsd:string,
+                                            "3 otestttttttttt"^^xsd:string,
+                                            "3/4 cuesttttttttp of sugar"^^xsd:string;
+     <https://schema.org/#recipeInstructions> "Coesttttttttok, Bake, Kys"^^xsd:string.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:ns0="http://schema.org/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <ns0:AggregateRating rdf:nodeID="b0">
+    <ns0:ratingValue rdf:datatype="&xsd;string">2.5</ns0:ratingValue>
+  </ns0:AggregateRating>
+  <ns0:NutritionInformation rdf:nodeID="b1">
+    <ns0:calories rdf:datatype="&xsd;string">240</ns0:calories>
+    <ns0:fatContent rdf:datatype="&xsd;string">9</ns0:fatContent>
+    <ns0:proteinContent rdf:datatype="&xsd;string">30</ns0:proteinContent>
+  </ns0:NutritionInformation>
+  <ns0:ItemList rdf:nodeID="b2">
+    <ns0:itemListElement rdf:datatype="&xsd;string">Add the flour last. Pour the mixture into a loaf pan and bake for one hour.</ns0:itemListElement>
+  </ns0:ItemList>
+</rdf:RDF>
