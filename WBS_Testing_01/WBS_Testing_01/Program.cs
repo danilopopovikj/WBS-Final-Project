@@ -15,8 +15,8 @@ namespace WBS_Testing_01
     {
         static void Main(string[] args)
         {
+            //uncomment if you need to serialize the recipes from json to jsonld
             //ConvertJsonRecipesToJsonRdf();
-            
             try
             {
                 TripleStore tripleStore = new TripleStore();
@@ -75,27 +75,23 @@ namespace WBS_Testing_01
                 Console.WriteLine("RDF Error");
                 Console.WriteLine(rdfEx.Message);
             }
+            
         }
-        String convertToSPARQLList(List<string> list)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("(");
-            foreach (string item in list)
-            {
-                sb.Append("\"");
-                sb.Append(item);
-                sb.Append("\"");
-                sb.Append(", ");
-            }
-            sb.Remove(sb.Length - 1, 1);
-            sb.Append(")");
-            return sb.ToString();
-        }
+
         static void ConvertJsonRecipesToJsonRdf()
         {
-            object deserializedRecipes = JsonConvert.DeserializeObject<List<Recipe>>(File.ReadAllText(@"D:\Firefox Downloads\epicurious-recipes-with-rating-and-nutrition\full_format_recipes.json"));
+            Console.WriteLine("Enter the full path to the recipes json file:");
+            var pathString = Path.GetFullPath(Console.ReadLine());
+            Console.WriteLine("Enter the full path to the recipe template file:");
+            var templatePath = Path.GetFullPath(Console.ReadLine());
+            Console.WriteLine("Enter the full path to desired output destination folder:");
+            var outputFolderPath = Path.GetFullPath(Console.ReadLine());
+            outputFolderPath += "output.jsonld";
+            
+            var jsonString = File.ReadAllText(pathString);
+            object deserializedRecipes = JsonConvert.DeserializeObject<List<Recipe>>(jsonString);
             var recipes = deserializedRecipes as List<Recipe>;
-            var template = File.ReadAllText(@"C:\Users\Danilo Popovikj\Desktop\Template.jsonld");
+            var template = File.ReadAllText(templatePath);
             var jsonArray = string.Empty;
             jsonArray += "[";
             foreach (var recipe in recipes)
@@ -112,8 +108,7 @@ namespace WBS_Testing_01
                     ingridientsString += $"\"{ ing.Replace("\"", "")}\"";
                     ingridientsString += ",";
                 }
-                if (ingridientsString.EndsWith(','))
-                    ingridientsString = ingridientsString.TrimEnd(ingridientsString[ingridientsString.Length - 1]);
+                ingridientsString = ingridientsString.TrimEnd(',',' ');
                 toReplace = toReplace.Replace("{{Ingredients}}", ingridientsString);
                 toReplace = toReplace.Replace("{{Name}}", recipe.Title?.Replace("\"", "") ?? string.Empty);
 
@@ -123,17 +118,17 @@ namespace WBS_Testing_01
                     instructionsString += $"\"{ dir.Replace("\"", "")}\"";
                     instructionsString += ",";
                 }
-                if (instructionsString.EndsWith(','))
-                    instructionsString.TrimEnd(instructionsString[instructionsString.Length - 1]);
+                instructionsString = instructionsString.TrimEnd(',', ' ');
                 toReplace = toReplace.Replace("{{Instructions}}", instructionsString);
                 jsonArray += toReplace;
                 jsonArray += ",";
             }
-            if (jsonArray.EndsWith(','))
-                jsonArray = jsonArray.TrimEnd(jsonArray[jsonArray.Length - 1]);
+            jsonArray = jsonArray.TrimEnd(',', ' ');
             jsonArray += ']';
 
-            File.WriteAllText(@"C:\Users\Danilo Popovikj\Desktop\output.jsonld", jsonArray);
+            File.WriteAllText(outputFolderPath, jsonArray);
+
+            Console.WriteLine("\n\nSuccessfully finished! You can find your jsonld output at: " + outputFolderPath+"\n\n");
         }
     }
 }

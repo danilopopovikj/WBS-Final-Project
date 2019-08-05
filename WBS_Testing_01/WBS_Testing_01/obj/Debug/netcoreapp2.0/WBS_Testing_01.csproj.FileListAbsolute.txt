@@ -9,3 +9,14 @@ C:\Users\Danilo Popovikj\source\repos\WBS_Testing_01\WBS_Testing_01\obj\Debug\ne
 C:\Users\Danilo Popovikj\source\repos\WBS_Testing_01\WBS_Testing_01\bin\Debug\netcoreapp2.0\WBS_Testing_01.pdb
 C:\Users\Danilo Popovikj\source\repos\WBS_Testing_01\WBS_Testing_01\obj\Debug\netcoreapp2.0\WBS_Testing_01.dll
 C:\Users\Danilo Popovikj\source\repos\WBS_Testing_01\WBS_Testing_01\obj\Debug\netcoreapp2.0\WBS_Testing_01.pdb
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\bin\Debug\netcoreapp2.0\WBS_Testing_01.deps.json
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\bin\Debug\netcoreapp2.0\WBS_Testing_01.runtimeconfig.json
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\bin\Debug\netcoreapp2.0\WBS_Testing_01.runtimeconfig.dev.json
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\bin\Debug\netcoreapp2.0\WBS_Testing_01.dll
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\bin\Debug\netcoreapp2.0\WBS_Testing_01.pdb
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\obj\Debug\netcoreapp2.0\WBS_Testing_01.csprojAssemblyReference.cache
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\obj\Debug\netcoreapp2.0\WBS_Testing_01.csproj.CoreCompileInputs.cache
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\obj\Debug\netcoreapp2.0\WBS_Testing_01.AssemblyInfoInputs.cache
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\obj\Debug\netcoreapp2.0\WBS_Testing_01.AssemblyInfo.cs
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\obj\Debug\netcoreapp2.0\WBS_Testing_01.dll
+D:\Dev\Workspace\WBS-Final-Project\WBS_Testing_01\WBS_Testing_01\obj\Debug\netcoreapp2.0\WBS_Testing_01.pdb
